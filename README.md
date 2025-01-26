@@ -76,6 +76,23 @@ Run the tests:
 pytest tests
 ```
 
+## Tests coverage
+
+Ensure your tests cover a high percentage of your code with `pytest-cov`.
+Code coverage ensures you’re testing all parts of your application. An report provides a visual overview of covered and uncovered lines.
+
+Run tests with coverage:
+
+```bash
+pytest --cov=source tests
+```
+
+Run tests with minimum coverage:
+
+```bash
+pytest --cov=source --cov-fail-under=80 tests
+```
+
 ## Pre commit
 
 Use pre-commit hooks to enforce linting and tests before each commit.
