@@ -46,3 +46,14 @@ Update the packages in the requirements.txt file:
 ```bash
 pip install -r requirements.txt --upgrade
 ```
+
+## Setup linter
+
+Linting ensures code adheres to Python's coding standards (PEP 8).
+pylint checks for errors, enforces consistency, and improves code readability. The configuration file .pylintrc can be customized to suit your team's needs.
+
+Run the linter:
+
+```bash
+pylint your_module.py
+```
