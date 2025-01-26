@@ -77,3 +77,20 @@ Run the tests:
 ```bash
 pytest
 ```
+
+## Pre commit
+
+Use pre-commit hooks to enforce linting and tests before each commit.
+Pre-commit hooks prevent bad code from entering your repository by automatically running linting and testing checks before each commit.
+
+Install the pre-commit hooks:
+
+```bash
+pre-commit install
+```
+
+Test the hooks:
+
+```bash
+pre-commit run --all-files
+```
