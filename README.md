@@ -57,3 +57,23 @@ Run the linter:
 ```bash
 pylint your_module.py
 ```
+
+## Setup unit testing
+
+Testing ensures your code is reliable and prevents bugs.
+Testing ensures your code works as expected. By creating tests for every new function, you can catch errors early.
+
+The tests are included in the tests/ folder where the file name matches the module name and path in the project.
+
+Write a test (eg: tests/test_sample.py):
+
+```python
+def test_example():
+    assert 1 + 1 == 2
+```
+
+Run the tests:
+
+```bash
+pytest
+```
