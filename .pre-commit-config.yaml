@@ -3,19 +3,21 @@ repos:
     rev: v4.4.0
     hooks:
       - id: trailing-whitespace
+        name: Remove trailing whitespace
       - id: end-of-file-fixer
+        name: Remove end of file
   - repo: local
     hooks:
-      - id: pytest
-        name: pytest
-        entry: ./venv/bin/pytest --cov=source --cov-fail-under=80 tests
+      - id: pylint
+        name: Code quality
+        entry: ./venv/bin/pylint .
         language: system
         types: [python]
         pass_filenames: false
         always_run: true
-      - id: pylint
-        name: pylint
-        entry: ./venv/bin/pylint .
+      - id: pytest
+        name: Tests and Coverage
+        entry: ./venv/bin/pytest --cov=source --cov-fail-under=80 tests
         language: system
         types: [python]
         pass_filenames: false
