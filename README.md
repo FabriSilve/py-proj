@@ -1,3 +1,13 @@
+<!--toc:start-->
+
+- [Virtual Environment](#virtual-environment)
+- [Dependency management](#dependency-management)
+- [Setup linter](#setup-linter)
+- [Setup unit testing](#setup-unit-testing)
+- [Tests coverage](#tests-coverage)
+- [Pre commit](#pre-commit)
+<!--toc:end-->
+
 ## Virtual Environment
 
 A virtual environment isolates your project dependencies, preventing version conflicts with system-installed Python packages.
@@ -58,6 +68,9 @@ Run the linter:
 pylint .
 ```
 
+Failing rules can be checked from the official [Pylint documentation](https://pylint.pycqa.org/en/latest/user_guide/message-control.html).
+Search for the code connected to the failing rule and you will fine the reason of the failure and how to fix it.
+
 ## Setup unit testing
 
 Testing ensures your code is reliable and prevents bugs. By creating tests for every new function, you can catch errors early.
@@ -74,7 +87,11 @@ Run the tests:
 
 ```bash
 pytest tests
+# For more details in the output use the --verbose flag
+pytest tests --verbose
 ```
+
+For more information about the tests and dedicated assertions, check the [official documentation](https://docs.pytest.org/en/stable/).
 
 ## Tests coverage
 
